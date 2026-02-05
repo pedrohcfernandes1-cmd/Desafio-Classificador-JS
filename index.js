@@ -1,37 +1,27 @@
-let nomeHeroi = "Dante"
-let xp = 15.000
+// Variáveis do herói,
+let nomeHeroi = "Samantha"
+let xpHeroi = 12000
+let nivelHeroi = ""
 
-do {
-    xp <= 1.000
-    xp <= 2.000
-     or >= 1.001
+// Estrutura de decisão para classificar o nível
+if (xpHeroi < 1000) {
+    nivel = "Ferro";
+} else if (xpHeroi >= 1001 && xpHeroi <= 2000) {
+    nivel = "Bronze";
+} else if (xpHeroi >= 2001 && xpHeroi <= 5000) {
+    nivel = "Prata";
+} else if (xpHeroi >= 5001 && xpHeroi <= 7000) {
+    nivel = "Ouro";
+} else if (xpHeroi >= 7001 && xpHeroi <= 8000) {
+    nivel = "Platina";
+} else if (xpHeroi >= 8001 && xpHeroi <= 9000) {
+    nivel = "Ascendente";
+} else if (xpHeroi >= 9001 && xpHeroi <= 10000) {
+    nivel = "Imortal";
+} else {
+    nivel = "Radiante";
+}
 
-    xp <= 3.000
-     or >= 2.001
 
-    xp <= 4.000
-     or >= 3.001
-
-    xp <= 5.000
-     or >= 4.001
-
-    xp <= 6.000
-     or >= 5.001
-
-    xp <= 7.000
-     or >= 6.001
-
-    xp <= 8.000
-     or >= 7.001
-
-    xp <= 9.000
-     or >= 8.001
-
-    xp <= 10.000
-     or >= 9.001
-
-    xp >= 10.001
-
-} while (xp);
-
-console.log(xp)
+// Saída final
+console.log("O Herói de nome " + nomeHeroi + "está no nível de " + nivelHeroi);
